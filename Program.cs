@@ -1,4 +1,6 @@
-﻿namespace ClassAndStruct
+﻿using ClassAndStruct.models;
+
+namespace ClassAndStruct
 {
     internal class Program
     {
@@ -20,13 +22,15 @@
 
 
             //Because "person" & "newPerson" are references to the same object
+            Console.WriteLine("==========Using Class==========");
             Console.WriteLine(person.Name); // Name Changed
 
             var newPersonStruct = personStruct;
             newPerson.Name = "Name Changed";
 
             //Because "personStruct" and "newPersonStruct" are value types
-            Console.WriteLine(personStruct.Name);
+            Console.WriteLine("==========Using Struct==========");
+            Console.WriteLine(personStruct.Name); //Name will not change
         }
     }
 }

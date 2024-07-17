@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassAndStruct
+namespace ClassAndStruct.models
 {
     public class Person
     {
@@ -20,16 +20,6 @@ namespace ClassAndStruct
         {
             Name = name;
         }
-
-
-        public struct PersonStruct
-        {
-            public string Name { get; set; }
-
-            public PersonStruct(string name)
-            {
-                Name = name;
-            }
-        }
+        
     }
 }
